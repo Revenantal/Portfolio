@@ -157,13 +157,13 @@ const experience = [
 export default function Home() {
   return (
     <div className="max-w-4xl mb-10">
-      <h1 className="lg:text-4xl text-3xl"><HtmlText htmlTag="h1">Hello! I'm <br className="block sm:hidden" /><span className="text-accent">Adrian Bradley</span></HtmlText></h1>
+      <h1 className="lg:text-4xl text-3xl"><HtmlText htmlTag="h1">Hello! I&apos;m <br className="block sm:hidden" /><span className="text-accent">Adrian Bradley</span></HtmlText></h1>
       <h2 className="text-2xl mb-5"><HtmlText htmlTag="h2">Full Stack Developer, WordPress Specialist</HtmlText></h2>
 
-      <p className="mb-3"><HtmlText htmlTag="p">I'm a highly versatile, and skilled web developer with nearly 10 years of experience working in <span className="text-accent">Digital Marketing</span>. This experience has helped me gain a deep understanding of the <span className="text-accent">practical needs</span> and <span className="text-accent">requirements</span> of a project, focusing on purpose-driven development rather than development for its own sake.</HtmlText></p>
-      <p className="mb-3"><HtmlText htmlTag="p">Over the past nearly decade, I've built an extensive skill set in various technologies, with my core expertise lying in the following: <span className="text-accent">React</span>, <span className="text-accent">Laravel</span>, <span className="text-accent">Tailwind CSS</span>, <span className="text-accent">Bootstrap</span>, and <span className="text-accent">WordPress</span>.</HtmlText></p>
+      <p className="mb-3"><HtmlText htmlTag="p">I&apos;m a highly versatile, and skilled web developer with nearly 10 years of experience working in <span className="text-accent">Digital Marketing</span>. This experience has helped me gain a deep understanding of the <span className="text-accent">practical needs</span> and <span className="text-accent">requirements</span> of a project, focusing on purpose-driven development rather than development for its own sake.</HtmlText></p>
+      <p className="mb-3"><HtmlText htmlTag="p">Over the past nearly decade, I&apos;ve built an extensive skill set in various technologies, with my core expertise lying in the following: <span className="text-accent">React</span>, <span className="text-accent">Laravel</span>, <span className="text-accent">Tailwind CSS</span>, <span className="text-accent">Bootstrap</span>, and <span className="text-accent">WordPress</span>.</HtmlText></p>
       <p className="mb-3"><HtmlText htmlTag="p">These skills, combined with my experience in <span className="text-accent">digital marketing</span> have shaped me into a <span className="text-accent">solution-driven developer</span> focused on identifying the best approach for each unique challenge, rather than applying a one-size-fits-all solution.</HtmlText></p>
-      <p className="mb-3"><HtmlText htmlTag="p">Outside of work, I'm pretending to be good at <span className="text-accent">video games</span>, or hanging out with my <span className="text-accent">farm of animals</span>. Though to be honest, it's usually both.</HtmlText></p>
+      <p className="mb-3"><HtmlText htmlTag="p">Outside of work, I&apos;m pretending to be good at <span className="text-accent">video games</span>, or hanging out with my <span className="text-accent">farm of animals</span>. Though to be honest, it&apos;s usually both.</HtmlText></p>
 
 
       <h3 className="text-2xl mt-10"><HtmlText htmlTag="h2">Experiments</HtmlText></h3>
@@ -201,7 +201,7 @@ export default function Home() {
 
       <h3 className="text-2xl mt-10"><HtmlText htmlTag="h2">Technologies</HtmlText></h3>
       <div className="lg:ps-5 ps-2 pt-5 border-l-1 ms-1">
-        <p className="mb-3"><HtmlText htmlTag="p">With extensive experience in <span className="text-accent">digital marketing,</span> which prioritizes <span className="text-accent">quick and efficient turnarounds</span>, I've adapted to working with a wide range of technologies.</HtmlText></p>
+        <p className="mb-3"><HtmlText htmlTag="p">With extensive experience in <span className="text-accent">digital marketing,</span> which prioritizes <span className="text-accent">quick and efficient turnarounds</span>, I&apos;ve adapted to working with a wide range of technologies.</HtmlText></p>
         <HtmlText htmlTag="ul">
           <div className="lg:ps-5 ps-2 border-l-1 ms-1">
             {technologies.map(({ key, name, percentage }) => (
@@ -275,7 +275,7 @@ export default function Home() {
 
       <h3 className="text-2xl mt-10"><HtmlText htmlTag="h2">API Endpoints</HtmlText></h3>
       <div className="lg:ps-5 ps-2 pt-5 border-l-1 ms-1">
-        <p className="mb-3"><HtmlText htmlTag="p">If my skill set aligns with what <span className="text-accent">you're looking for</span>, feel free to reach out to me through any of the following methods.</HtmlText></p>
+        <p className="mb-3"><HtmlText htmlTag="p">If my skill set aligns with what <span className="text-accent">you&apos;re looking for</span>, feel free to reach out to me through any of the following methods.</HtmlText></p>
         <HtmlText htmlTag="ul">
           <ul className="lg:ps-5 ps-2 border-l-1 ms-1">
             <li><HtmlText htmlTag="li"><MdAlternateEmail className="inline me-3" /><a className="text-brand underline transition hover:text-accent" href="mailto:hello@adrianbradley.ca">Email</a></HtmlText></li>

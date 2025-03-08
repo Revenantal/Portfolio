@@ -1,7 +1,7 @@
 "use client";
 
 import MenuItem from "./menu-item";
-import { MenuItem as MenuItemType } from "interfaces/menu-item";
+import MenuItemInterface from "@/interfaces/menu-item";
 import { FaFilePdf } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { RiFolderOpenFill } from "react-icons/ri";
@@ -11,7 +11,7 @@ import Resizer from "../resizer";
 export default function TreeSidebar({
   menu
 }: {
-  menu?: MenuItemType[]
+  menu?: MenuItemInterface[]
 }) {
 
   const { width } = useSidebar();
@@ -47,7 +47,7 @@ export default function TreeSidebar({
           {children && (
             <>
               <div className="flex flex-col">
-                {children.map(({ href, target, label, key }: MenuItemType) => (
+                {children.map(({ href, target, label, key }: MenuItemInterface) => (
                   <MenuItem key={key}
                     href={href}
                     target={target || "_self"}

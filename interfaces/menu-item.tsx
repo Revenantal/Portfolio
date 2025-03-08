@@ -1,8 +1,8 @@
-export default interface MenuItem {
-    key: string,
-    href: string,
-    target: string,
-    label: string,
-    icon: React.ReactNode,
-    children?: MenuItem[],
+export default interface MenuItemInterface {
+  key: string,
+  href: string,
+  target?: string,
+  label: string,
+  icon?: React.ReactNode,
+  children?: MenuItemInterface[],
 }

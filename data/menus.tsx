@@ -1,9 +1,9 @@
 import { VscSourceControl, VscFiles, VscAccount } from "react-icons/vsc";
-import { MenuItem } from "interfaces/menu-item";
+import MenuItemInterface from "@/interfaces/menu-item";
 import { Experiments } from "./experiments";
 import { Projects } from "./projects";
 
-export const IconSidebarPrimaryMenu: MenuItem[] = [
+export const IconSidebarPrimaryMenu: MenuItemInterface[] = [
   {
     key: 'icon-sidebar-primary-menu-explorer',
     href: "/",
@@ -19,23 +19,17 @@ export const IconSidebarPrimaryMenu: MenuItem[] = [
   }
 ];
 
-export const IconSidebarSecondaryMenu: MenuItem[] = [
+export const IconSidebarSecondaryMenu: MenuItemInterface[] = [
   {
     key: 'icon-sidebar-secondary-menu-linkedin',
     href: "https://www.linkedin.com/in/adrian2433/",
     target: "_blank",
     label: 'Linkedin',
     icon: <VscAccount />
-  }, /*{
-        key: 'icon-sidebar-secondary-menu-settings',
-        href: "/settings",
-        target: "_self",
-        label: 'Settings',
-        icon: <VscSettingsGear />
-    }*/
+  }
 ]
 
-export const TreeSidebarMenu: MenuItem[] = [
+export const TreeSidebarMenu: MenuItemInterface[] = [
   {
     key: 'tree-sidebar-menu-index',
     href: "/",
@@ -71,7 +65,7 @@ export const TreeSidebarMenu: MenuItem[] = [
   }
 ]
 
-export const TopBarMenuLeft: MenuItem[] = [
+export const TopBarMenuLeft: MenuItemInterface[] = [
   {
     key: 'top-bar-menu-left-view',
     href: "#",
