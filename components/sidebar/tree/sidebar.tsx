@@ -47,11 +47,12 @@ export default function TreeSidebar({
           {children && (
             <>
               <div className="flex flex-col">
-                {children.map(({ href, target, label, key }: MenuItemInterface) => (
+                {children.map(({ href, target, label, key, prefetch }: MenuItemInterface) => (
                   <MenuItem key={key}
                     href={href}
                     target={target || "_self"}
-                    title={label}>
+                    title={label}
+                    prefetch={prefetch}>
 
                     <div className="flex flex-row items-center ms-5">
                       <span className="me-2">{getIcon(label)}</span> {label}
