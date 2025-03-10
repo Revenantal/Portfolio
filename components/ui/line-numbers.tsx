@@ -30,7 +30,7 @@ export default function LineNumber() {
   }, [pathname])
 
   return (
-    <div className="relative w-10 me-5 text-end">
+    <div className="relative w-10 me-5 text-end select-none" aria-hidden="true">
       <div className="flex flex-col opacity-25 text-right select-none h-full absolute w-full" ref={ref}>
           <div className="absolute w-full">
           {[...Array(lines)].map((_, i) => (
