@@ -17,11 +17,20 @@ export default function MenuItem({
 
   const pathname = usePathname();
   return (
-    <Link href={href}
-      className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent  hover:bg-white/5 active:bg-brand/50 active:border-brand"}
-      prefetch={prefetch ?? true}
-      {...rest}>
-      {children}
-    </Link>
+    <>
+      {prefetch ?
+        <a href={href}
+          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent  hover:bg-white/5 active:bg-brand/50 active:border-brand"}
+          {...rest}>
+          {children}
+        </a>
+      :
+        <Link href={href}
+          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent  hover:bg-white/5 active:bg-brand/50 active:border-brand"}
+          {...rest}>
+          {children}
+        </Link>
+      }
+    </>
   );
 }

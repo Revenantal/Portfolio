@@ -25,7 +25,6 @@ export default function TreeSidebar({
       default:
         return <RiFolderOpenFill className="text-yellow-400" />
     }
-    return null;
   }
 
   return (

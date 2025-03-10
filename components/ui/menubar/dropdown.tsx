@@ -10,7 +10,24 @@ export default function Dropdown({
 }: {
   menuItem: MenuItem
 }) {
+
+
   const [open, setOpen] = useState(false);
+
+  const MenuLink = (menuItem: MenuItem) => {
+    return (
+      menuItem.prefetch ? (
+        <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
+          <div>{menuItem.label}</div>
+        </Link>
+      ) : (
+        <a href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
+          <div>{menuItem.label}</div>
+        </a>
+      )
+    );
+  }
+
   return (
     <>
       <div key={menuItem.key} className="relative  px-2 rounded flex flex-row items-center cursor-default hover:bg-background-light"
@@ -23,9 +40,7 @@ export default function Dropdown({
               return menuItem.children ? (
                 <DropdownSubmenu menuItem={menuItem} key={menuItem.key} />
               ) : (
-                <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} prefetch={menuItem.prefetch ?? true} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
-                  <div>{menuItem.label}</div>
-                </Link>
+                MenuLink(menuItem)
               )
             })
             }
