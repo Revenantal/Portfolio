@@ -37,7 +37,7 @@ export const Experiments: ExperimentInterface[] = [
     title: 'Internet Game Database (IGDB)',
     links: [{
       key: 'igdb-url',
-      url: 'https://igdb-nu.vercel.app/catalog',
+      url: 'https://igdb-nu.vercel.app/games',
       label: 'Project URL',
       target: '_blank',
     }, {

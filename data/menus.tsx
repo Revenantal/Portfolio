@@ -14,7 +14,7 @@ export const IconSidebarPrimaryMenu: MenuItemInterface[] = [
     key: 'icon-sidebar-primary-menu-github',
     href: "https://github.com/Revenantal",
     target: "_blank",
-    label: 'GitHub',
+    label: 'GitHub', 
     icon: <VscSourceControl />
   }
 ];
@@ -40,6 +40,7 @@ export const TreeSidebarMenu: MenuItemInterface[] = [
     href: "/adrian-bradley-resume.pdf",
     target: "_blank",
     label: 'resume.pdf',
+    prefetch: false,
   }, {
     key: 'tree-sidebar-menu-experiments',
     href: "/experiments",
@@ -99,7 +100,8 @@ export const TopBarMenuLeft: MenuItemInterface[] = [
         key: 'top-bar-menu-left-view-resume',
         href: "/adrian-bradley-resume.pdf",
         target: "_blank",
-        label: 'Resume'
+        label: 'Resume',
+        prefetch: false,
       },
     ]
   }, {

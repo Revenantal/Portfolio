@@ -25,19 +25,19 @@ export default function TreeSidebar({
       default:
         return <RiFolderOpenFill className="text-yellow-400" />
     }
-    return null;
   }
 
   return (
     <div className="flex flex-col flex-1 relative overflow-clip text-nowrap" style={{ width: width }}>
       <Resizer />
       <div className="px-3 py-4 font-bold ">Adrian&apos;s Portfolio</div>
-      {menu?.map(({ href, target, label, children, key }) => (
+      {menu?.map(({ href, target, label, children, key, prefetch }) => (
         <div key={key}>
           <MenuItem
             href={href}
             target={target || "_self"}
-            title={label}>
+            title={label}
+            prefetch={prefetch}>
 
             <div className="flex flex-row items-center px-3">
               <span className="me-2">{getIcon(label)}</span> {label}
@@ -47,11 +47,12 @@ export default function TreeSidebar({
           {children && (
             <>
               <div className="flex flex-col">
-                {children.map(({ href, target, label, key }: MenuItemInterface) => (
+                {children.map(({ href, target, label, key, prefetch }: MenuItemInterface) => (
                   <MenuItem key={key}
                     href={href}
                     target={target || "_self"}
-                    title={label}>
+                    title={label}
+                    prefetch={prefetch}>
 
                     <div className="flex flex-row items-center ms-5">
                       <span className="me-2">{getIcon(label)}</span> {label}

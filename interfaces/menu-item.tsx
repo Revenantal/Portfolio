@@ -5,4 +5,5 @@ export default interface MenuItemInterface {
   label: string,
   icon?: React.ReactNode,
   children?: MenuItemInterface[],
+  prefetch?: boolean,
 }
