@@ -15,7 +15,6 @@ export default function MenuItem({
   children?: React.ReactNode,
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
 
-  console.log(prefetch);
   const pathname = usePathname();
   return (
     <>
