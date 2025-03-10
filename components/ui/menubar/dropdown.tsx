@@ -16,14 +16,14 @@ export default function Dropdown({
 
   const MenuLink = (menuItem: MenuItem) => {
     return (
-      menuItem.prefetch ? (
-        <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
-          <div>{menuItem.label}</div>
-        </Link>
-      ) : (
+      menuItem.prefetch === false ? (
         <a href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
           <div>{menuItem.label}</div>
         </a>
+      ) : (
+        <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
+          <div>{menuItem.label}</div>
+        </Link>
       )
     );
   }

@@ -15,18 +15,19 @@ export default function MenuItem({
   children?: React.ReactNode,
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
 
+  console.log(prefetch);
   const pathname = usePathname();
   return (
     <>
-      {prefetch ?
+      {prefetch === false ?
         <a href={href}
-          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent  hover:bg-white/5 active:bg-brand/50 active:border-brand"}
+          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent hover:bg-white/5 active:bg-brand/50 active:border-brand"}
           {...rest}>
           {children}
         </a>
       :
         <Link href={href}
-          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent  hover:bg-white/5 active:bg-brand/50 active:border-brand"}
+          className={(pathname == href ? "bg-white/10" : "") + " flex border-1 border-transparent hover:bg-white/5 active:bg-brand/50 active:border-brand"}
           {...rest}>
           {children}
         </Link>

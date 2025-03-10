@@ -8,22 +8,22 @@ export default function DropdownSubmenu({
   menuItem
 }: {
   menuItem: MenuItem
-  }) {
+}) {
 
   const MenuLink = (menuItem: MenuItem) => {
     return (
-      menuItem.prefetch ? (
-        <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
-          <div>{menuItem.label}</div>
-        </Link>
-      ) : (
+      menuItem.prefetch === false ? (
         <a href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
           <div>{menuItem.label}</div>
         </a>
+      ) : (
+        <Link href={menuItem.href} target={menuItem.target} key={menuItem.key} className="flex flex-row gap-1 items-center px-5 py-1 hover:bg-brand rounded mx-1">
+          <div>{menuItem.label}</div>
+        </Link>
       )
     );
   }
-  
+
   return (
     <>
       <div key={menuItem.key} className="flex flex-row gap-1 items-center justify-between px-5 py-1 relative hover:bg-brand rounded mx-1 group">
@@ -37,7 +37,7 @@ export default function DropdownSubmenu({
             return menuItem.children ? (
               <DropdownSubmenu menuItem={menuItem} />
             ) : (
-                MenuLink(menuItem)
+              MenuLink(menuItem)
             )
           })
           }
