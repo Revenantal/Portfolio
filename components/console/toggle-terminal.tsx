@@ -15,7 +15,7 @@ export default function ToggleTerminal({
     return (
         <div
             className={className}                     
-            onClick={() => { setIsExpanded(!isExpanded); console.log(isExpanded) }}>
+            onClick={() => { setIsExpanded(!isExpanded) }}>
             {children}
         </div>
     )

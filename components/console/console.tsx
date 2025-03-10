@@ -13,7 +13,7 @@ export default function Console() {
     const { isExpanded, height } = useConsoleTray();
 
     return (
-        <div style={{ height: height }} className={`relative lg:flex flex-col bg-background-accent border-y p-4 py-2 gap-2 pe-0 ${!isExpanded && '!hidden'}`}>
+      <div style={{ height: height }} className={`flex relative flex-col bg-background-accent border-y p-4 py-2 gap-2 pe-0 ${!isExpanded ? 'lg:hidden' : 'max-lg:hidden'}`}>
             <Resizer/>
             <ControlBar />
             <LogWindow />
