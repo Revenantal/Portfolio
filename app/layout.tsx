@@ -66,7 +66,7 @@ export default function RootLayout({
                   <div className="flex flex-col flex-1 overflow-y-auto h-fill custom-scrollbar">
                       <div className="flex flex-row">
                         <LineNumbers />
-                        <div className="flex flex-1 me-5">
+                        <div className="flex flex-1 px-5">
                           {children}
                         </div>
                       </div>

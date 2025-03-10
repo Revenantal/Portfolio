@@ -157,7 +157,7 @@ const experience = [
 export default function Home() {
   return (
     <div className="max-w-4xl mb-10">
-      <h1 className="lg:text-4xl text-3xl"><HtmlText htmlTag="h1">Hello! I&apos;m <br className="block sm:hidden" /><span className="text-accent">Adrian Bradley</span></HtmlText></h1>
+      <h1 className="lg:text-4xl text-3xl"><HtmlText htmlTag="h1">Hello! I&apos;m <br className="block lg:hidden" /><span className="text-accent">Adrian Bradley</span></HtmlText></h1>
       <h2 className="text-2xl mb-5"><HtmlText htmlTag="h2">Full Stack Developer, WordPress Specialist</HtmlText></h2>
 
       <p className="mb-3"><HtmlText htmlTag="p">I&apos;m a highly versatile, and skilled web developer with nearly 10 years of experience working in <span className="text-accent">Digital Marketing</span>. This experience has helped me gain a deep understanding of the <span className="text-accent">practical needs</span> and <span className="text-accent">requirements</span> of a project, focusing on purpose-driven development rather than development for its own sake.</HtmlText></p>
