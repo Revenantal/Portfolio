@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: '%s | Adrian Bradley',
     default: 'Adrian Bradley',
   },
-  description: "Ad",
+  description: "Adrian Bradley is a skilled Full Stack Developer and WordPress Specialist with nearly a decade of experience in digital marketing. Explore his interactive portfolio, projects, and expertise in React, Laravel, WordPress, and more.",
   openGraph: {
     images: '/og-image.jpg',
   },

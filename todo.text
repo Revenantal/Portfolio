@@ -1,0 +1,8 @@
+* Meta description for inside pages
+* minor responsive issue on bullet points on phone
+* Adjust "Experiments-short-term" on homepage
+* Increase Contrast on links
+* add aria-hidden to page numbers and make them non-selectable
+* add aria-hidden to number tags and make them non-selectable
+* Adjust resume links to the A instead of Link to prevent prefetching
+https://pagespeed.web.dev/analysis/https-adrianbradley-ca/a0lxoleezh?form_factor=desktop

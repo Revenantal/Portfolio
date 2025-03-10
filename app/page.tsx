@@ -9,7 +9,7 @@ import { Projects } from "@/data/projects";
 import Link from "next/link";
 
 export const metadata = {
-  title: 'Index | Adrian Bradley',
+  title: 'Adrian Bradley',
 }
 
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: 'Projects | Adrian Bradley',
+  description: 'Deployed & production ready projects by Adrian Bradley.'
 }
 
 export default function Page() {
