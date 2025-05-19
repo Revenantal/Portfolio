@@ -53,5 +53,54 @@ export const Projects: ProjectInterface[] = [
         </HtmlText>
       </div>
     )
+  }, {
+    key: 'rodent--portfolio',
+    slug: 'rodent-rumble',
+    title: 'Rodent Rumble (Reimagined)',
+    links: [{
+      key: 'project-url',
+      url: 'https://rodentrumble.adrianbradley.ca',
+      label: 'Project URL',
+      target: "_blank",
+    }, {
+      key: 'original-url',
+      url: 'https://rodentrumble.com',
+      label: 'Original Website',
+      target: "_blank",
+    }],
+    intro: 'A weekend challenge project, to reimagine a website.',
+    content: (
+      <div>
+        <p className="pb-3">
+          <HtmlText htmlTag="p">
+            This project was a <span className="text-accent">fun personal challenge to reimagine a website</span> that inspired me. The original website is <a href="https://rodentrumble.com/" target="_blank" className="text-brand underline transition hover:text-accent">https://rodentrumble.com</a> and it's fun atmopshere of the trailer made me wonder what I could do with it. However, it's rarely enough to just reimagine a website, so I decided to set some arbitrary rules for myself. The rules were as follows:
+          </HtmlText>
+        </p>
+          <HtmlText htmlTag="ul">
+            <ul className="lg:ps-5 ps-2 border-l-1 ms-1">
+                <li>
+                  <HtmlText htmlTag="li">
+                Finish the project within a <span className="text-accent">weekend</span>.
+                  </HtmlText>
+              </li>
+              <li>
+                <HtmlText htmlTag="li">
+                Use only assets, and copy (with minor modifications) from the official <a href="https://rodentrumble.com/" target="_blank" className="text-brand underline transition hover:text-accent">https://rodentrumble.com</a>.
+                </HtmlText>
+              </li>
+              <li>
+                <HtmlText htmlTag="li">
+                  Still exist in the real world and work normal hours.
+                </HtmlText>
+              </li>
+            </ul>
+          </HtmlText>
+        <p className="pb-3">
+          <HtmlText htmlTag="p">
+            Overall it's a fun little project that I had a blast working on. There are certaintly some sections I'd like to improve upon, but given the constraints, I'm happy with the result.
+          </HtmlText>
+        </p>
+      </div>
+    )
   },
 ];
