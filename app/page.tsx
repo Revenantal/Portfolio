@@ -126,7 +126,7 @@ const experience = [
       'Collaborated with clients to identify needs and tailor technical solutions.',
       'Managed and mentored development team, ensuring alignment with project goals.',
       'Identified and executed growth plans for transitioning legacy assets into modern solutions.',
-      'Implemented a WordPress- first strategy for future company projects.',
+      'Implemented a WordPress first strategy for future company projects.',
       'Integrated and evolved Laravel as a core development solution for the company.',
     ]
   }, {
@@ -158,7 +158,7 @@ export default function Home() {
   return (
     <div className="max-w-4xl mb-10">
       <h1 className="lg:text-4xl text-3xl"><HtmlText htmlTag="h1">Hello! I&apos;m <br className="block lg:hidden" /><span className="text-accent">Adrian Bradley</span></HtmlText></h1>
-      <h2 className="text-2xl mb-5"><HtmlText htmlTag="h2">Full Stack Developer, WordPress Specialist</HtmlText></h2>
+      <h2 className="text-2xl mb-5"><HtmlText htmlTag="h2">Full Stack Developer</HtmlText></h2>
 
       <p className="mb-3"><HtmlText htmlTag="p">I&apos;m a highly versatile, and skilled web developer with nearly 10 years of experience working in <span className="text-accent">Digital Marketing</span>. This experience has helped me gain a deep understanding of the <span className="text-accent">practical needs</span> and <span className="text-accent">requirements</span> of a project, focusing on purpose-driven development rather than development for its own sake.</HtmlText></p>
       <p className="mb-3"><HtmlText htmlTag="p">Over the past nearly decade, I&apos;ve built an extensive skill set in various technologies, with my core expertise lying in the following: <span className="text-accent">React</span>, <span className="text-accent">Laravel</span>, <span className="text-accent">Tailwind CSS</span>, <span className="text-accent">Bootstrap</span>, and <span className="text-accent">WordPress</span>.</HtmlText></p>
